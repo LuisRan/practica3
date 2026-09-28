@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>La cámara se usa para tomar fotos que se guardan en la galería de la app.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>El micrófono se usa para grabar notas de audio que se guardan en el dispositivo.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>La ubicación se guarda como metadato de tus fotos y grabaciones (opcional).</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Permite exportar tus fotos a la app Fotos.</string>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+</dict>
+</plist>
