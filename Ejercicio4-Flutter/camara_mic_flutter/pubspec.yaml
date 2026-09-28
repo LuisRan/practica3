@@ -1,0 +1,41 @@
+name: camara_mic_flutter
+description: "Práctica 3 · Ejercicio 4 — Cámara y micrófono multiplataforma (Android/iOS) con Flutter. ESCOM-IPN."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Gestión de estado
+  provider: ^6.1.2
+
+  # Acceso a recursos del dispositivo
+  camera: ^0.11.1              # Cámara (Android: CameraX, iOS: AVFoundation)
+  record: ^6.0.0               # Grabación de audio (AVAudioRecorder / MediaRecorder)
+  audioplayers: ^6.4.0         # Reproducción de audio
+  permission_handler: ^12.0.0  # Permisos en tiempo de ejecución
+  image_picker: ^1.1.2         # Importar fotos (fototeca / galería)
+  file_picker: ^10.1.9         # Importar audios desde Archivos
+  share_plus: ^11.0.0          # Exportar / compartir
+
+  # Almacenamiento local
+  sqflite: ^2.4.2              # Metadatos (SQLite)
+  path_provider: ^2.1.5        # Directorios del sandbox
+  path: ^1.9.0
+  shared_preferences: ^2.3.3   # Preferencias (tema, opciones de captura)
+
+  # Procesamiento de imágenes (filtros, edición, miniaturas)
+  image: ^4.3.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
