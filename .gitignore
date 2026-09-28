@@ -1,0 +1,9 @@
+.DS_Store
+*.tgz
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+.idea/
+.vscode/
+_to_delete/
