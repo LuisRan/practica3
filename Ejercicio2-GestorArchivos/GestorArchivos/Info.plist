@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Expone la carpeta Documents en la app Archivos (En mi iPhone) -->
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<!-- Permite abrir documentos en su lugar desde la app Archivos -->
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<!-- Tipos de documento que la app puede abrir / recibir de otras apps -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Cualquier archivo</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.data</string>
+				<string>public.content</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
