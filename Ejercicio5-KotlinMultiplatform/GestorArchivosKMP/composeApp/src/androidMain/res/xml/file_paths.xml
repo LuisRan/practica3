@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="internos" path="." />
+    <cache-path name="cache" path="." />
+    <external-files-path name="externos" path="." />
+    <external-path name="compartido" path="." />
+</paths>
