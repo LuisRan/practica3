@@ -10,11 +10,9 @@
 
 | Integrante | Boleta |
 |---|---|
-| _[Nombre completo]_ | _[Boleta]_ |
-| _[Nombre completo]_ | _[Boleta]_ |
-| _[Nombre completo]_ | _[Boleta]_ |
+| Rangel Mata José Luis | 2023630577 |
 
-**Profesor:** _[Nombre del profesor]_ · **Grupo:** _[Grupo]_
+**Profesor:** Gabriel Hurtado Avilés · **Grupo:** 7CV4 · **Asignatura:** Desarrollo de aplicaciones móviles nativas
 **Fecha de entrega:** 28 de septiembre de 2026
 
 </div>
@@ -70,7 +68,7 @@ Todas las apps implementan los temas **Guinda (IPN)** y **Azul (ESCOM)**, que se
 
 | Integrante | Equipo | CPU | RAM | Almacenamiento libre | GPU | Virtualización | ¿Apto? |
 |---|---|---|---|---|---|---|---|
-| _[Responsable]_ | **Mac (Apple M1)** | Apple M1 | 8 GB | _[__]_ GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
+| Rangel Mata José Luis | **Mac (Apple M1)** | Apple M1 | 8 GB | _[__]_ GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
 | _[Integrante 2]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 | _[Integrante 3]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 
@@ -78,7 +76,7 @@ Requisitos de `gabrielhuav/MacOS-Docker`: **16 GB de RAM**, **20 GB libres (50 G
 
 **Justificación:** se eligió la MacBook Air porque ejecuta macOS de forma nativa. Xcode y los simuladores usan aceleración de hardware, y no hace falta virtualizar con QEMU/KVM, generar números de serie ni descargar la imagen de macOS (~1 h).
 
-- **Responsable del equipo utilizado:** _[Nombre completo]_ — Boleta _[__________]_
+- **Responsable del equipo utilizado:** Rangel Mata José Luis — Boleta 2023630577
 - **Equipo:** Mac con chip Apple M1, 8 GB de RAM, macOS _[versión]_, Xcode _[versión]_
 
 📸 `docs/img/ej1_acerca_de_mac.png` — *Acerca de esta Mac*
@@ -351,7 +349,7 @@ Todas las apps se probaron en **modo avión** para verificar que funcionan sin c
 
 ## 6. Bitácora de trabajo
 
-**Responsable del equipo utilizado:** _[Nombre completo]_ (boleta _[__________]_), propietario de la MacBook Air. Todas las sesiones se hicieron sobre esa computadora, en persona o de forma remota con pantalla compartida.
+**Responsable del equipo utilizado:** Rangel Mata José Luis (boleta 2023630577), propietario de la MacBook Air. Todas las sesiones se hicieron sobre esa computadora, en persona o de forma remota con pantalla compartida.
 **Unión con otro equipo:** No aplica.
 
 | # | Fecha | Inicio | Término | Modalidad | Integrantes presentes | Actividades | Evidencia |
