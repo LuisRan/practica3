@@ -70,7 +70,7 @@ Todas las apps implementan los temas **Guinda (IPN)** y **Azul (ESCOM)**, que se
 
 | Integrante | Equipo | CPU | RAM | Almacenamiento libre | GPU | Virtualización | ¿Apto? |
 |---|---|---|---|---|---|---|---|
-| _[Responsable]_ | **MacBook Air** | Apple _[M_]_ | _[__]_ GB | _[__]_ GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
+| _[Responsable]_ | **Mac (Apple M1)** | Apple M1 | 8 GB | _[__]_ GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
 | _[Integrante 2]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 | _[Integrante 3]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 
@@ -79,7 +79,7 @@ Requisitos de `gabrielhuav/MacOS-Docker`: **16 GB de RAM**, **20 GB libres (50 G
 **Justificación:** se eligió la MacBook Air porque ejecuta macOS de forma nativa. Xcode y los simuladores usan aceleración de hardware, y no hace falta virtualizar con QEMU/KVM, generar números de serie ni descargar la imagen de macOS (~1 h).
 
 - **Responsable del equipo utilizado:** _[Nombre completo]_ — Boleta _[__________]_
-- **Equipo:** MacBook Air, Apple _[M_]_, _[__]_ GB RAM, macOS _[versión]_, Xcode _[versión]_
+- **Equipo:** Mac con chip Apple M1, 8 GB de RAM, macOS _[versión]_, Xcode _[versión]_
 
 📸 `docs/img/ej1_acerca_de_mac.png` — *Acerca de esta Mac*
 
