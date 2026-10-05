@@ -158,3 +158,8 @@ extension NSManagedObjectContext {
         do { try save() } catch { print("Error al guardar: \(error)") }
     }
 }
+
+// Permite usar ForEach / List directamente con los resultados de @FetchRequest
+// (cada objeto ya tiene un `id: UUID`, solo falta declarar la conformidad).
+extension MediaItem: Identifiable {}
+extension Album: Identifiable {}

@@ -36,7 +36,7 @@
 7. [Conclusiones](#7-conclusiones)
 8. [Bibliografía](#8-bibliografía)
 
-> Las capturas de pantalla se guardan en [`docs/img/`](docs/img). Donde dice **📸** va la captura correspondiente.
+> Las capturas de pantalla se guardan en [`docs/img/`](docs/img). Donde dice **Captura pendiente** falta agregar la imagen correspondiente.
 
 ---
 
@@ -68,7 +68,7 @@ Todas las apps implementan los temas **Guinda (IPN)** y **Azul (ESCOM)**, que se
 
 | Integrante | Equipo | CPU | RAM | Almacenamiento libre | GPU | Virtualización | ¿Apto? |
 |---|---|---|---|---|---|---|---|
-| Rangel Mata José Luis | **Mac (Apple M1)** | Apple M1 | 8 GB | _[__]_ GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
+| Rangel Mata José Luis | **Mac (Apple M1)** | Apple M1 | 8 GB | 41 GB | Integrada Apple | N/A (macOS nativo) | **Sí — Mac física** |
 | _[Integrante 2]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 | _[Integrante 3]_ | _[Equipo]_ | _[CPU]_ | _[__]_ GB | _[__]_ GB | _[GPU]_ | _[Sí/No]_ | _[Sí/No]_ |
 
@@ -77,9 +77,10 @@ Requisitos de `gabrielhuav/MacOS-Docker`: **16 GB de RAM**, **20 GB libres (50 G
 **Justificación:** se eligió la MacBook Air porque ejecuta macOS de forma nativa. Xcode y los simuladores usan aceleración de hardware, y no hace falta virtualizar con QEMU/KVM, generar números de serie ni descargar la imagen de macOS (~1 h).
 
 - **Responsable del equipo utilizado:** Rangel Mata José Luis — Boleta 2023630577
-- **Equipo:** Mac con chip Apple M1, 8 GB de RAM, macOS _[versión]_, Xcode _[versión]_
+- **Equipo:** Mac con chip Apple M1, 8 GB de RAM, macOS 26.6.2, Xcode 27.0
 
-📸 `docs/img/ej1_acerca_de_mac.png` — *Acerca de esta Mac*
+![Acerca de esta Mac: MacBook Air M1, 2020, 8 GB](docs/img/ej1_acerca_de_mac.png)
+*Acerca de esta Mac: MacBook Air (M1, 2020), 8 GB de memoria.*
 
 #### 1.2 Instalación con MacOS-Docker (ruta alternativa)
 
@@ -118,7 +119,15 @@ Los simuladores se instalan desde *Xcode › Settings › Components › iOS*.
 
 **Proyecto de prueba `HolaESCOM`** (SwiftUI): muestra el modelo y la versión del sistema, si se ejecuta en simulador o en dispositivo, un contador con estado y el cambio de tema Guinda/Azul.
 
-📸 `docs/img/ej1_xcode.png` · `docs/img/ej1_simuladores.png` · `docs/img/ej1_holaescom.png`
+![Proyecto HolaESCOM abierto en Xcode](docs/img/ej1_xcode.png)
+*Proyecto HolaESCOM abierto en Xcode 27.0.*
+
+| Tema Guinda | Tema Azul |
+|---|---|
+| ![HolaESCOM, tema Guinda](docs/img/ej1_holaescom.png) | ![HolaESCOM, tema Azul](docs/img/ej1_holaescom_azul.png) |
+
+*HolaESCOM en ejecución. La app muestra la información del entorno (iPadOS 26.6, dispositivo físico) porque se ejecutó en la Mac como app de iPad (*My Mac (Designed for iPad)*). Alterna entre los temas Guinda y Azul.*
+_[Pendiente: captura de los simuladores instalados — `docs/img/ej1_simuladores.png`]_
 
 ---
 
@@ -153,7 +162,18 @@ App en **Swift 5 + SwiftUI** con componentes UIKit integrados mediante `UIViewCo
 
 **Valor agregado:** el target tiene habilitado **Mac Catalyst**. En la versión de macOS la app corre en una ventana redimensionable; el menú contextual se abre con clic secundario y los gestos de pinza y rotación se hacen con el trackpad. _[Anotar diferencias observadas y agregar captura `docs/img/ej2_macos.png`]_
 
-📸 `docs/img/ej2_inicio.png` · `docs/img/ej2_carpeta_menu.png` · `docs/img/ej2_quicklook.png` · `docs/img/ej2_modo_oscuro_azul.png`
+![Proyecto GestorArchivos en Xcode](docs/img/ej2_xcode.png)
+*Proyecto GestorArchivos en Xcode, con su estructura `App / Models / Services / Theme / Views`.*
+
+| Inicio (Guinda) | Carpeta Documents |
+|---|---|
+| ![Inicio con ubicaciones del sandbox](docs/img/ej2_inicio.png) | ![Contenido de Documents, ordenado por nombre](docs/img/ej2_carpeta.png) |
+
+| Archivo de texto (`config.json`) | Ajustes, tema Azul y modo oscuro |
+|---|---|
+| ![Visor de config.json con Formatear y Editar](docs/img/ej2_texto_json.png) | ![Ajustes: tema, ordenamiento y caché de miniaturas](docs/img/ej2_modo_oscuro_azul.png) |
+
+_[Pendiente: capturas del menú contextual y de Quick Look — `docs/img/ej2_carpeta_menu.png`, `docs/img/ej2_quicklook.png`]_
 
 ---
 
@@ -173,7 +193,7 @@ App SwiftUI con cuatro pestañas: **Cámara**, **Audio**, **Galería** y **Ajust
 | Exportar / importar | Hoja de compartir (individual y en lote); importar fotos (PHPicker) y audios (Archivos) |
 
 **Fuente de captura en el simulador:** el simulador de iOS no tiene cámara física. La app detecta que no hay dispositivo de captura y ofrece la **fototeca con `PHPickerViewController`** como fuente alternativa; el filtro elegido se aplica también a las fotos importadas. En un iPhone físico se usa la cámara real.
-**Opción usada en las pruebas:** _[simulador con PHPicker / iPhone físico]_.
+**Opción usada en las pruebas:** cámara real del MacBook, ejecutando la app en la Mac como app de iPad (*My Mac (Designed for iPad)*). No se usó el simulador, así que no fue necesario el respaldo con `PHPickerViewController`.
 
 **Almacenamiento local:**
 - Los archivos se guardan en `Documents/Media/{Photos,Audio}`.
@@ -184,7 +204,13 @@ App SwiftUI con cuatro pestañas: **Cámara**, **Audio**, **Galería** y **Ajust
 
 **Gestos y animaciones:** destello y háptica al disparar, cuenta regresiva animada, pulso del botón de grabación, zoom con pinza, doble toque para cambiar de cámara y deslizamiento entre fotos.
 
-📸 `docs/img/ej3_camara.png` · `docs/img/ej3_grabadora.png` · `docs/img/ej3_galeria.png` · `docs/img/ej3_editor.png`
+| Cámara con filtros | Grabadora |
+|---|---|
+| ![Vista de cámara con selector de filtros](docs/img/ej3_camara.png) | ![Pestaña Audio con sensibilidad, calidad y temporizador](docs/img/ej3_grabadora.png) |
+
+| Galería | Editor de foto |
+|---|---|
+| ![Galería con filtros Todo, Fotos y Audio](docs/img/ej3_galeria.png) | ![Editor con filtro Noir, brillo y contraste](docs/img/ej3_editor.png) |
 
 ---
 
@@ -227,7 +253,7 @@ Flujo: *Widget → Provider → Caso de uso → MediaRepository (abstracto) → 
 - En el simulador iOS (sin cámara) se ofrece la galería como fuente alternativa.
 - UI **Material Design 3** idéntica en ambas plataformas; modo claro/oscuro según el sistema (también seleccionable).
 
-📸 `docs/img/ej4_android.png` · `docs/img/ej4_ios.png`
+Captura pendiente: `docs/img/ej4_android.png` · `docs/img/ej4_ios.png`
 
 ---
 
@@ -270,7 +296,7 @@ GestorArchivosKMP/
 - Compartir, favoritos y recientes; la app restaura la última carpeta al abrir.
 - Material 3 en Android y apariencia coherente en iOS; temas con modo claro/oscuro automático.
 
-📸 `docs/img/ej5_android.png` · `docs/img/ej5_ios.png`
+Captura pendiente: `docs/img/ej5_android.png` · `docs/img/ej5_ios.png`
 
 ---
 
@@ -335,15 +361,15 @@ Una IPA para iPhone físico requiere firmar con una cuenta de desarrollador de A
 
 | App | Plataforma / dispositivo | Casos probados | Resultado |
 |---|---|---|---|
-| HolaESCOM | Simulador iPhone _[modelo]_, iOS _[__]_ | Compilación, ejecución, estado, cambio de tema | _[OK]_ |
-| Gestor de Archivos | Simulador iPhone y iPad | Navegar, crear, renombrar, copiar/mover, eliminar, Quick Look, importar, compartir, favoritos, recientes, rotación, modo oscuro | _[OK]_ |
-| Cámara y Micrófono | Simulador (PHPicker) / iPhone físico _[si aplica]_ | Permisos, captura con filtros/flash/temporizador, grabación con límite, reproducción, álbumes, etiquetas, exportar/importar | _[OK]_ |
+| HolaESCOM | Mac Apple M1 (*Designed for iPad*), macOS 26.6.2, Xcode 27.0 | Compilación, ejecución y cambio de tema Guinda/Azul | OK |
+| Gestor de Archivos | Mac Apple M1 (*Designed for iPad*), macOS 26.6.2 | Navegar por Documents, abrir `config.json`, recientes, cambio de tema, orden y caché de miniaturas _[Pendiente: crear/renombrar/copiar/mover/eliminar, Quick Look, importar, compartir]_ | OK |
+| Cámara y Micrófono | Mac Apple M1 (*Designed for iPad*), cámara real del MacBook | Compilación, vista previa con filtros, pestañas Audio y Galería, editor de foto (filtro Noir) _[Pendiente: permisos, grabación y reproducción de audio, álbumes y etiquetas, exportar/importar]_ | OK |
 | Flutter | Emulador Android API _[__]_ y simulador iOS | Mismos casos del Ej. 3 en ambas plataformas | _[OK]_ |
 | KMP | Emulador Android API _[__]_ y simulador iOS | Mismos casos del Ej. 2, permiso de almacenamiento en Android, pruebas `commonTest` | _[OK]_ |
 
 Todas las apps se probaron en **modo avión** para verificar que funcionan sin conexión.
 
-📸 Capturas de las pruebas en `binarios/capturas/`.
+Capturas de las pruebas en `binarios/capturas/`.
 
 ---
 
@@ -362,7 +388,7 @@ Todas las apps se probaron en **modo avión** para verificar que funcionan sin c
 | 6 | _[__/__/2026]_ | | | | | Ej. 5: KMP, expect/actual, compilación Android/iOS | |
 | 7 | 28/09/2026 | | | | | Integración, README/informe, binarios y capturas | |
 
-📸 Evidencia de las reuniones (fotos del equipo trabajando o capturas de videollamada) en `docs/img/bitacora/`.
+Evidencia de las reuniones (fotos del equipo trabajando o capturas de videollamada) en `docs/img/bitacora/`.
 
 ---
 
